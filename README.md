@@ -7,6 +7,11 @@
 
 Uma landing page moderna, minimalista e de alta conversão desenvolvida para a **Avance Web Solutions**. O projeto foca em um design "Light Mode" profissional, utilizando as melhores práticas de UI/UX para atrair clientes de tecnologia e negócios.
 
+<div align="center">
+<img src="img/index.png" alt="Screenshot da Landing Page Avance Web Solutions" width="100%" style="border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+<p><em>Pré-visualização da página principal em desktop.</em></p>
+</div>
+
 ---
 
 ## 🎨 Design & Experiência do Usuário
