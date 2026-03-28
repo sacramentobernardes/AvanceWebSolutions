@@ -13,7 +13,7 @@ Uma landing page moderna, minimalista e de alta conversão desenvolvida para a *
 </p>
 
 <h1 align="center">
-  <img src="img/index.png" alt="Screenshot da Landing Page Avance Web Solutions" width="70%">
+  <img src="Img/index.png" width="70%">
   <br>
    <p align="center" style="font-size:15px">Pré-visualização da página principal em desktop.</p>
 </h1>
