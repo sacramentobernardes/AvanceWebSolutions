@@ -1,18 +1,24 @@
 
-# 🚀 Avance Web Solutions
+<h1 align="center"> 🚀 Avance Web Solutions </h1>
+
+<h1 align="center">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ![Main Language](https://img.shields.io/badge/Main_Language-HTML5%20%2F%20CSS3-orange)
 ![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-brightgreen)
 
+</h1>
+<p align="center"> 
 Uma landing page moderna, minimalista e de alta conversão desenvolvida para a **Avance Web Solutions**. O projeto foca em um design "Light Mode" profissional, utilizando as melhores práticas de UI/UX para atrair clientes de tecnologia e negócios.
+</p>
 
-<div align="center">
-  <img src="img/index.png" alt="Screenshot da Landing Page Avance Web Solutions" width="100%">
-  <p><em>Pré-visualização da página principal em desktop.</em></p>
-</div>
+<h1 align="center">
+  <img src="img/index.png" alt="Screenshot da Landing Page Avance Web Solutions" width="70%">
+  <br>
+   <p align="center" style="font-size:15px">Pré-visualização da página principal em desktop.</p>
+</h1>
 
----
+
 
 ## 🎨 Design & Experiência do Usuário
 O projeto foi redesenhado para oferecer uma experiência clara e objetiva:
