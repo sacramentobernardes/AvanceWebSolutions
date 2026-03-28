@@ -7,7 +7,7 @@ window.addEventListener('scroll', () => {
         header.style.padding = '0.5rem 0'; // Encolhe levemente o header
     } else {
         header.style.boxShadow = 'none';
-        header.style.padding = '1rem 0';
+        header.style.padding = '1rem 0'; 
     }
 });
 
@@ -44,3 +44,4 @@ form.addEventListener('submit', (e) => {
     // O Formspree cuidará do redirecionamento após o envio
     console.log("Formulário submetido. Aguardando Formspree.");
 });
+
