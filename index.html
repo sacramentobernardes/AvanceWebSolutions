@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avance Web Solutions</title>
+    <!-- Livraria Animação -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Icones FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="Img/Avance.ico">
+</head>
+<body>
+
+    <div class="glow-bg"></div>
+
+    <!-- Cabeçalho -->
+    <header>
+        <nav class="container">
+            <div class="logo">AVANCE<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#sobre" class="btn-on">Sobre</a></li>
+                <li><a href="#contato" class="btn-glow">Orçamento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Sobre -->
+    <main>
+        <section id="sobre" class="about-section container">
+            <div class="about-grid">
+                <div class="about-content" data-aos="fade-right">
+                    <span class="badge">Full Stack</span>
+                    <h1>Transformando Linhas de Código em <span>Resultados</span></h1>
+                    <p class="lead-text">
+                        Como estudante de Ciência da Computação na <strong>UNA</strong>, desenvolvi um olhar técnico apurado que une a lógica da engenharia à estética do design moderno.
+                    </p>
+                    
+                    <div class="skills-container">
+                        <div class="skill-card">
+                            <div class="icon-box"><i class="fab fa-html5"></i></div>
+                            <div>
+                                <h4>Interface</h4>
+                                <p>HTML5, CSS3 & UI Design</p>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="icon-box"><i class="fab fa-js"></i></div>
+                            <div>
+                                <h4>Dinâmica</h4>
+                                <p>JavaScript & Interatividade</p>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="icon-box"><i class="fas fa-database"></i></div>
+                            <div>
+                                <h4>Dados</h4>
+                                <p>SQL & Estruturação eficiente</p>
+                            </div>
+                        </div>
+                        <div class="skill-card">
+                            <div class="icon-box"><i class="fab fa-git-alt"></i></div>
+                            <div>
+                                <h4>Workflow</h4>
+                                <p>Git, GitHub & Deploy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-visual" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <div class="code-content">
+                            <pre><code><span class="purple">const</span> <span class="blue">Avance</span> = {
+  missao: <span class="green">"Performance"</span>,
+  foco: <span class="green">"Conversão"</span>,
+  stack: [<span class="green">"FullStack"</span>],
+  status: <span class="green">"Pronto para decolar"</span>
+};</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="contact-section">
+            <div class="container" data-aos="fade-up">
+                <div class="glass-form-wrapper">
+                    <div class="form-header">
+                        <h2>Vamos tirar seu projeto do papel?</h2>
+                        <p>Preencha os dados e receba uma análise estratégica.</p>
+                    </div>
+
+                    <form action="https://formspree.io/f/xwvwvoze" method="POST" id="leadForm" class="modern-form">
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Nome Completo</label>
+                                <input type="text" name="nome" placeholder="Ex: Vinícius Bernardes" required>
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label>Seu melhor E-mail</label>
+                                <input type="email" name="email" placeholder="seu@empresa.com" required>
+                            </div>
+                            <div class="input-group">
+                                <label>WhatsApp</label>
+                                <input type="tel" name="whatsapp" placeholder="(37) 9 9999-9999" required>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Tipo de Projeto</label>
+                            <select name="projeto" required>
+                                <option value="" disabled selected>Selecione o tipo de projeto</option>
+                                
+                                <optgroup label="Institucional & Vendas">
+                                    <option value="Landing Page">🚀 Landing Page (Conversão)</option>
+                                    <option value="Site Institucional">🏢 Site para Empresa</option>
+                                    <option value="Loja Virtual">🛒 E-commerce / Loja Virtual</option>
+                                </optgroup>
+
+                                <optgroup label="Alimentação & Comércio">
+                                    <option value="Cardápio Digital">🍔 Cardápio Online / Delivery</option>
+                                    <option value="Site de Padaria">🥐 Site para Padaria/Confeitaria</option>
+                                    <option value="Catálogo de Produtos">📦 Catálogo de Vitrine</option>
+                                </optgroup>
+
+                                <optgroup label="Serviços">
+                                    <option value="Sistema de Agendamento">📅 Site com Agendamento</option>
+                                    <option value="Portfólio">🎨 Portfólio Profissional</option>
+                                    <option value="Outros">⚙️ Outros Projetos</option>
+                                </optgroup>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Mensagem</label>
+                            <textarea name="mensagem" rows="4" placeholder="Fale brevemente sobre seu objetivo..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-main">SOLICITAR ORÇAMENTO AGORA <i class="fas fa-rocket"></i></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-info">
+                <div class="logo">AVANCE<span>.</span></div>
+                <p>Tecnologia que impulsiona negócios.</p>
+                <div class="social-icons">
+                    <a href="www.linkedin.com/in/viniciussbernardes" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/sacramentobernardes" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/avance.dev/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
+                    <a href="https://wa.me/5537999262566?text=Ola!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20a%20cria%C3%A7%C3%A3o%20de%20um%20site%20para%20%5Bseu%20objetivo%2C%20ex%3A%20minha%20carteira%20de%20clientes%20%2F%20minha%20empresa%5D." target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h4>Contato</h4>
+                <p>sacramentobernardes@gmail.com</p>
+                <p>Itaúna, MG | Brasil</p>
+            </div>
+        </div>
+        <div class="footer-copy">
+            &copy; 2026 Avance Web Solutions. Desenvolvido por Vinícius Bernardes.
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+</html>
