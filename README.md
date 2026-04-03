@@ -13,7 +13,7 @@ Uma landing page moderna, minimalista e de alta conversão desenvolvida para a *
 </p>
 
 <h1 align="center">
-  <img src="Img/index.png" width="70%">
+  <img src="img/index.png" width="70%">
   <br>
    <p align="center" style="font-size:15px">Pré-visualização da página principal em desktop.</p>
 </h1>
