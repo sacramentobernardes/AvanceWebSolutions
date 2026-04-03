@@ -1,47 +1,68 @@
 // Efeito de Header ao rolar a página
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
+    if (!header) return;
+
     if (window.scrollY > 50) {
-        // Sombra mais visível no fundo branco
-        header.style.boxShadow = '0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.03)';
-        header.style.padding = '0.5rem 0'; // Encolhe levemente o header
+        header.style.boxShadow = '0 10px 20px rgba(15, 23, 42, 0.08)';
+        header.style.padding = '0.55rem 0';
     } else {
         header.style.boxShadow = 'none';
-        header.style.padding = '1rem 0'; 
+        header.style.padding = '1rem 0';
     }
 });
 
-// Suavização do Scroll para links internos (Cross-browser)
+// Suavização do scroll para links internos
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
         const targetId = this.getAttribute('href');
-        if (targetId === '#') return; // Ignora links vazios
+        if (!targetId || targetId === '#') return;
 
         const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-            targetElement.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+        if (!targetElement) return;
+
+        e.preventDefault();
+        targetElement.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
     });
 });
 
-// Validação básica e feedback do formulário
+// Atualiza ano automaticamente no rodapé
+const currentYear = document.getElementById('currentYear');
+if (currentYear) {
+    currentYear.textContent = new Date().getFullYear();
+}
+
+// Máscara simples para WhatsApp
+const whatsappInput = document.getElementById('whatsapp');
+if (whatsappInput) {
+    whatsappInput.addEventListener('input', (e) => {
+        let value = e.target.value.replace(/\D/g, '').slice(0, 11);
+
+        if (value.length > 10) {
+            value = value.replace(/(\d{2})(\d{1})(\d{4})(\d{0,4})/, '($1) $2 $3-$4');
+        } else if (value.length > 6) {
+            value = value.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
+        } else if (value.length > 2) {
+            value = value.replace(/(\d{2})(\d{0,5})/, '($1) $2');
+        } else if (value.length > 0) {
+            value = value.replace(/(\d{0,2})/, '($1');
+        }
+
+        e.target.value = value.trim();
+    });
+}
+
+// Feedback visual do formulário
 const form = document.getElementById('leadForm');
-const submitBtn = form.querySelector('.btn-main');
+const submitBtn = form ? form.querySelector('.btn-main') : null;
 
-form.addEventListener('submit', (e) => {
-    // Você não pode prevenir o padrão se quiser que o Formspree funcione
-    // e.preventDefault(); 
-
-    // Mudar o estado do botão para feedback visual
-    submitBtn.innerHTML = 'Enviando... <i class="fas fa-spinner fa-spin"></i>';
-    submitBtn.style.opacity = '0.7';
-    submitBtn.style.pointerEvents = 'none';
-
-    // O Formspree cuidará do redirecionamento após o envio
-    console.log("Formulário submetido. Aguardando Formspree.");
-});
-
+if (form && submitBtn) {
+    form.addEventListener('submit', () => {
+        submitBtn.innerHTML = 'Enviando... <i class="fas fa-spinner fa-spin"></i>';
+        submitBtn.style.opacity = '0.85';
+        submitBtn.style.pointerEvents = 'none';
+    });
+}

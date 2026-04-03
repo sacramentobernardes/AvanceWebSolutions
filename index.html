@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sites modernos, responsivos e estratégicos para empresas que querem crescer com presença digital profissional.">
     <title>Avance Web Solutions</title>
     <!-- Livraria Animação -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Icones FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="Img/Avance.ico">
+    <link rel="icon" href="img/Avance.ico">
 </head>
 <body>
 
@@ -27,7 +28,6 @@
                 <li><a href="#contato" class="btn-glow">Orçamento</a></li>
             </ul>
         </nav>
-        
     </header>
 
     <!-- Seção Sobre -->
@@ -35,40 +35,67 @@
         <section id="sobre" class="about-section container">
             <div class="about-grid">
                 <div class="about-content" data-aos="fade-right">
-                    <span class="badge">Full Stack</span>
+                    <span class="badge">Full Stack & Estratégia Digital</span>
                     <h1>Transformando Linhas de Código em <span>Resultados</span></h1>
                     <p class="lead-text">
-                        Graduando em Ciência da Computação pela UNA, foco em converter lógica de engenharia em interfaces modernas e funcionais, equilibrando desempenho e experiência do usuário.
+                        Graduando em Ciência da Computação pela UNA, com foco em transformar lógica e estratégia em interfaces modernas, rápidas e funcionais — unindo desempenho, clareza e experiência do usuário.
                     </p>
+
+                    <div class="value-pills" aria-label="Diferenciais do serviço">
+                        <span><i class="fas fa-mobile-screen-button"></i> Responsivo</span>
+                        <span><i class="fas fa-bolt"></i> Performance</span>
+                        <span><i class="fas fa-magnifying-glass-chart"></i> SEO técnico</span>
+                        <!-- <span><i class="fab fa-whatsapp"></i> Integração com WhatsApp</span> -->
+                    </div>
+
+                    <div class="hero-actions">
+                        <a href="#contato" class="btn-glow hero-btn">Solicitar orçamento</a>
+                        <a href="https://wa.me/5537999262566?text=Olá!%20Quero%20entender%20como%20a%20Avance%20pode%20me%20ajudar." class="btn-outline hero-btn" target="_blank" rel="noopener noreferrer">Falar no WhatsApp</a>
+                    </div>
                     
                     <div class="skills-container">
-                        <div class="skill-card">
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="50">
                             <div class="icon-box"><i class="fab fa-html5"></i></div>
                             <div>
                                 <h4>Interface</h4>
                                 <p>HTML5, CSS3 & UI Design</p>
                             </div>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="100">
                             <div class="icon-box"><i class="fab fa-js"></i></div>
                             <div>
                                 <h4>Dinâmica</h4>
                                 <p>JavaScript & Interatividade</p>
                             </div>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="150">
                             <div class="icon-box"><i class="fas fa-database"></i></div>
                             <div>
                                 <h4>Dados</h4>
                                 <p>SQL & Estruturação eficiente</p>
                             </div>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card" data-aos="fade-up" data-aos-delay="200">
                             <div class="icon-box"><i class="fab fa-git-alt"></i></div>
                             <div>
                                 <h4>Workflow</h4>
                                 <p>Git, GitHub & Deploy</p>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="differentials-box" data-aos="fade-up" data-aos-delay="250">
+                        <div class="differential-item">
+                            <i class="fas fa-circle-check"></i>
+                            <span>Layout pensado para transmitir mais credibilidade desde a primeira visita.</span>
+                        </div>
+                        <div class="differential-item">
+                            <i class="fas fa-circle-check"></i>
+                            <span>Experiência clara para o cliente entender rápido o seu valor.</span>
+                        </div>
+                        <div class="differential-item">
+                            <i class="fas fa-circle-check"></i>
+                            <span>Estrutura pronta para captar contatos e gerar oportunidades.</span>
                         </div>
                     </div>
                 </div>
@@ -87,6 +114,25 @@
 };</code></pre>
                         </div>
                     </div>
+
+                    <div class="floating-benefits">
+                        <div class="floating-card">
+                            <small>Entrega</small>
+                            <strong>Visual profissional</strong>
+                            <span>Mais presença digital para seu negócio.</span>
+                        </div>
+                        <div class="floating-card">
+                            <small>Estratégia</small>
+                            <strong>Clareza na oferta</strong>
+                            <span>Informações organizadas para converter melhor.</span>
+                        </div>
+                        <div class="floating-card">
+                            <small>Contato</small>
+                            <strong>Mais facilidade</strong>
+                            <span>WhatsApp e formulário integrados para gerar leads.</span>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -95,44 +141,74 @@
         <section id="contato" class="contact-section">
             <div class="container" data-aos="fade-up">
                 <div class="glass-form-wrapper">
+                    <div class="contact-highlights">
+                        <div class="highlight-pill"><i class="fas fa-clock"></i> Resposta rápida</div>
+                        <div class="highlight-pill"><i class="fas fa-pen-ruler"></i> Projeto sob medida</div>
+                        <div class="highlight-pill"><i class="fas fa-location-dot"></i> Atendimento local e online</div>
+                    </div>
+
                     <div class="form-header">
                         <h2>Vamos tirar seu projeto do papel?</h2>
-                        <p>Preencha os dados e receba uma análise estratégica.</p>
+                        <p>Preencha os dados e receba uma análise estratégica para o seu site.</p>
                     </div>
 
                     <form action="https://formspree.io/f/xwvwvoze" method="POST" id="leadForm" class="modern-form">
                         <div class="input-row">
                             <div class="input-group">
-                                <label>Nome Completo</label>
-                                <input type="text" name="nome" placeholder="Ex: Vinícius Bernardes" required>
+                                <label for="nome">Nome Completo</label>
+                                <input type="text" id="nome" name="nome" placeholder="Ex: Vinícius Bernardes" required>
                             </div>
                         </div>
 
                         <div class="input-row">
                             <div class="input-group">
-                                <label>Seu melhor E-mail</label>
-                                <input type="email" name="email" placeholder="seu@empresa.com" required>
+                                <label for="email">Seu melhor E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="seu-email@example.com" required>
                             </div>
                             <div class="input-group">
-                                <label>WhatsApp</label>
-                                <input type="tel" name="whatsapp" placeholder="(37) 9 9999-9999" required>
+                                <label for="whatsapp">WhatsApp</label>
+                                <input type="tel" id="whatsapp" name="whatsapp" placeholder="(37) 9 9999-9999" required>
+                            </div>
+                        </div>
+
+                        <div class="input-row">
+                            <div class="input-group">
+                                <label for="prazo">Prazo desejado</label>
+                                <select id="prazo" name="prazo">
+                                    <option value="" selected>Selecione um prazo</option>
+                                    <option value="Urgente (até 7 dias)">Urgente (até 7 dias)</option>
+                                    <option value="Curto prazo (até 15 dias)">Curto prazo (até 15 dias)</option>
+                                    <option value="Planejado (até 30 dias)">Planejado (até 30 dias)</option>
+                                    <option value="Sem prazo definido">Sem prazo definido</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <label for="investimento">Faixa de investimento</label>
+                                <select id="investimento" name="investimento">
+                                    <option value="" selected>Selecione uma faixa</option>
+                                    <option value="Até R$ 500">Até R$ 500</option>
+                                    <option value="R$ 500 a R$ 1.000">R$ 500 a R$ 1.000</option>
+                                    <option value="R$ 1.000 a R$ 3.000">R$ 1.000 a R$ 3.000</option>
+                                    <option value="R$ 3.000 a R$ 6.000">R$ 3.000 a R$ 6.000</option>
+                                    <option value="Acima de R$ 6.000">Acima de R$ 6.000</option>
+                                </select>
                             </div>
                         </div>
 
                         <div class="input-group">
-                            <label>Tipo de Projeto</label>
-                            <select name="projeto" required>
+                            <label for="projeto">Tipo de Projeto</label>
+                            <select id="projeto" name="projeto" required>
                                 <option value="" disabled selected>Selecione o tipo de projeto</option>
                                 
                                 <optgroup label="Institucional & Vendas">
                                     <option value="Landing Page">🚀 Landing Page (Conversão)</option>
                                     <option value="Site Institucional">🏢 Site para Empresa</option>
-                                    <option value="Loja Virtual">🛒 E-commerce / Loja Virtual</option>
+                                    <option value="Loja Virtual">🛒 E-commerce / Vitrine Virtual</option>
                                 </optgroup>
 
                                 <optgroup label="Alimentação & Comércio">
-                                    <option value="Cardápio Digital">🍔 Cardápio Online / Delivery</option>
-                                    <option value="Site de Padaria">🥐 Site para Padaria/Confeitaria</option>
+                                    <option value="Cardápio Digital">🍔 Cardápio Online</option>
+                                    <option value="Site de Padaria">🥐 Site para Padaria / Confeitaria</option>
                                     <option value="Catálogo de Produtos">📦 Catálogo de Vitrine</option>
                                 </optgroup>
 
@@ -145,11 +221,12 @@
                         </div>
 
                         <div class="input-group">
-                            <label>Mensagem</label>
-                            <textarea name="mensagem" rows="4" placeholder="Fale brevemente sobre seu objetivo..."></textarea>
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Fale brevemente sobre seu objetivo..."></textarea>
                         </div>
 
-                        <button type="submit" class="btn-main">SOLICITAR ORÇAMENTO<i class="fas fa-rocket"></i></button>
+                        <button type="submit" class="btn-main">SOLICITAR ORÇAMENTO <i class="fas fa-rocket"></i></button>
+                        <p class="form-note"><i class="fas fa-shield-heart"></i> Sem spam. Apenas retorno sobre seu projeto.</p>
                     </form>
                 </div>
             </div>
@@ -162,30 +239,37 @@
                 <div class="logo">AVANCE<span>.</span></div>
                 <p>Tecnologia que impulsiona negócios.</p>
                 <div class="social-icons">
-                    <a href="https://www.linkedin.com/in/viniciussbernardes/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://github.com/sacramentobernardes" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.instagram.com/avance.dev/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
-                    <a href="https://wa.me/5537999262566?text=Ola!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20a%20cria%C3%A7%C3%A3o%20de%20um%20site%20para%20%5Bseu%20objetivo%2C%20ex%3A%20minha%20carteira%20de%20clientes%20%2F%20minha%20empresa%5D." target="_blank"><i class="fab fa-whatsapp"></i></a>
-
+                    <a href="https://www.linkedin.com/in/viniciussbernardes/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/sacramentobernardes" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/avance.dev/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/5537999262566?text=Ola!%20Gostaria%20de%20um%20or%C3%A7amento%20para%20a%20cria%C3%A7%C3%A3o%20de%20um%20site%20para%20%5Bseu%20objetivo%2C%20ex%3A%20minha%20carteira%20de%20clientes%20%2F%20minha%20empresa%5D." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
+
+            <div class="footer-links">
+                <h4>Atalhos</h4>
+                <a href="#sobre">Sobre</a>
+                <a href="#contato">Orçamento</a>
+                <a href="mailto:sacramentobernardes@gmail.com">E-mail</a>
+            </div>
+
             <div class="footer-contact">
                 <h4>Contato</h4>
-                <p>sacramentobernardes@gmail.com</p>
+                <p><a href="mailto:sacramentobernardes@gmail.com">sacramentobernardes@gmail.com</a></p>
+                <p><a href="https://wa.me/5537999262566" target="_blank" rel="noopener noreferrer">(37) 99926-2566</a></p>
                 <p>Itaúna, MG | Brasil</p>
             </div>
         </div>
         <div class="footer-copy">
-            &copy; 2026 Avance Web Solutions. Desenvolvido por Vinícius Bernardes.
+            &copy; <span id="currentYear">2026</span> Avance Web Solutions. Desenvolvido por Vinícius Bernardes.
         </div>
     </footer>
 
     <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({ duration: 1000, once: true });
+        AOS.init({ duration: 900, once: true, offset: 40 });
     </script>
-    <script src="js/script.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
